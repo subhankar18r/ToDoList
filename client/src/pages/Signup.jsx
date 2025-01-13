@@ -20,9 +20,9 @@ const Signup = () => {
   };
 
   return (
-    <main className="h-content flex flex-col items-center justify-center p-4">
+    <main className="flex h-content flex-col items-center justify-center p-4">
       <div className="rounded-lg p-4 text-center shadow-xl">
-        <h2>Signup</h2>
+        <h2 className="mb-4 text-2xl font-bold">Signup</h2>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <input
             className="input-text"
@@ -54,7 +54,9 @@ const Signup = () => {
             required
           />
 
-          <Button type="submit">Sign Up</Button>
+          <button type="submit" className="button">
+            Sign up
+          </button>
         </form>
       </div>
     </main>
